@@ -1,0 +1,286 @@
+{
+  "theme": "dark",
+  "project_name": "Pocket Talia",
+  "domain": "pockettalia.tech",
+  "archetype": "ARCHETYPE 5: LUXURY & CINEMATIC PRODUCTION TECH (High-Tech Dark Mode, Editorial Agency meets Film Pre-Production SaaS)",
+  "brand_essence": "Pocket Talia is the dual-engine independent digital media, viral production, and AI filmmaking software arm of Pocket. Dual mission: full-stack media agency for high-growth tech founders + all-in-one AI filmmaking pre-production SaaS suite with 'Talia' copilot.",
+  "colors": {
+    "background": {
+      "primary": "#0D0D11",
+      "surface_base": "#121217",
+      "surface_elevated": "#1A1A22",
+      "surface_card": "#16161E",
+      "overlay_scrim": "rgba(13, 13, 17, 0.75)"
+    },
+    "accents": {
+      "crimson_violet": "#8B0032",
+      "crimson_violet_glow": "rgba(139, 0, 50, 0.35)",
+      "rust_bloom": "#D35400",
+      "rust_bloom_soft": "#E67E22",
+      "clay_rose": "#C48B9F",
+      "willow_grove": "#4A6B5D",
+      "electric_amber": "#F39C12"
+    },
+    "text": {
+      "heading_primary": "#FFFFFF",
+      "heading_secondary": "#F3F4F6",
+      "ash_blush": "#E2D9DC",
+      "muted_silver": "#9CA3AF",
+      "subtle_mono": "#6B7280"
+    },
+    "borders": {
+      "subtle": "rgba(255, 255, 255, 0.08)",
+      "highlight": "rgba(255, 255, 255, 0.16)",
+      "crimson_active": "rgba(139, 0, 50, 0.5)",
+      "conic_gradient_border": "conic-gradient(from 0deg, #8B0032, #D35400, #C48B9F, #8B0032)"
+    }
+  },
+  "typography": {
+    "font_family_headings": "Syne, Cabinet Grotesk, sans-serif",
+    "font_family_body": "Inter, -apple-system, sans-serif",
+    "font_family_mono": "JetBrains Mono, monospace",
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap",
+    "rules": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08] text-white",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white",
+      "h3": "text-xl sm:text-2xl font-semibold tracking-normal text-[#F3F4F6]",
+      "h4": "text-lg sm:text-xl font-medium text-[#E2D9DC]",
+      "eyebrow": "text-xs font-mono uppercase tracking-[0.25em] text-[#C48B9F]",
+      "body": "text-base leading-relaxed text-[#9CA3AF]",
+      "body_sm": "text-sm leading-normal text-[#9CA3AF]"
+    }
+  },
+  "curated_image_assets": {
+    "hero_cinematic_production": {
+      "url": "https://images.unsplash.com/photo-1574712255236-ce5bf8395083?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxmaWxtbWFrZXIlMjBjYW1lcmElMjBwcm9kdWN0aW9uJTIwc3RhcnR1cCUyMGZvdW5kZXJ8ZW58MHx8fHwxNzkxNzgyOTY4fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Pocket Talia cinema camera team on set with robotic gimbal stabilizer",
+      "placement": "Hero section dynamic preview backdrop and dual-engine banner spotlight"
+    },
+    "director_operator_rig": {
+      "url": "https://images.unsplash.com/photo-1587050265310-1a2d98ccce5f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxmaWxtbWFrZXIlMjBjYW1lcmElMjBwcm9kdWN0aW9uJTIwc3RhcnR1cCUyMGZvdW5kZXJ8ZW58MHx8fHwxNzkxNzgyOTY4fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Filmmaker monitoring 4K raw anamorphic footage",
+      "placement": "Agency Engine card and client review workspace preview"
+    },
+    "studio_podcast_interview": {
+      "url": "https://images.unsplash.com/photo-1559523161-0fc0d8b38a7a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwxfHxwb2RjYXN0JTIwaW50ZXJ2aWV3JTIwc3R1ZGlvJTIwbmVvbiUyMGxpZ2h0c3xlbnwwfHx8fDE3OTE3ODI5Njh8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Founders recording live in high-end studio with acoustic treatment",
+      "placement": "Media Embed Matrix: Daily Shorts / Podcast Interviews tab"
+    },
+    "broadcast_audio_console": {
+      "url": "https://images.unsplash.com/photo-1615458318132-1f151a3d18f4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwyfHxwb2RjYXN0JTIwaW50ZXJ2aWV3JTIwc3R1ZGlvJTIwbmVvbiUyMGxpZ2h0c3xlbnwwfHx8fDE3OTE3ODI5Njh8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Soundboard audio engineering console with neon monitors",
+      "placement": "Workflow Step 3 & Post-Production mixing visual"
+    },
+    "docuseries_location_film": {
+      "url": "https://images.unsplash.com/photo-1627757881009-5ab1b99f1f47?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwzfHxjaW5lbWF0aWMlMjBmaWxtJTIwc2V0JTIwY2FtZXJhJTIwZGlyZWN0b3J8ZW58MHx8fHwxNzkxNzgyOTY4fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Docuseries on-location cinematic production with high-speed crane rig",
+      "placement": "Docuseries How to Startup 6-Episode guide feature banner"
+    },
+    "cinema_optics_rig": {
+      "url": "https://images.unsplash.com/photo-1574304904744-2e6919c5a2a9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHxmaWxtbWFrZXIlMjBjYW1lcmElMjBwcm9kdWN0aW9uJTIwc3RhcnR1cCUyMGZvdW5kZXJ8ZW58MHx8fHwxNzkxNzgyOTY4fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "ARRI / RED professional digital cinema rig with matte box",
+      "placement": "Vlog & Technical BTS card in Media Embed Matrix"
+    }
+  },
+  "sections_breakdown": [
+    {
+      "section_id": "navbar",
+      "name": "Navigation Bar",
+      "style": "Fixed z-50 top-0 w-full backdrop-blur-xl bg-[#0D0D11]/80 border-b border-white/[0.08]",
+      "components": [
+        "Brand Logo (Pocket Talia custom SVG emblem with cinematic lens aperture + stylized 'PT' monogram)",
+        "Nav links: 'AI Copilot Suite', 'Media Matrix', 'Analytics', 'Workflow', 'Pricing', 'Agency'",
+        "CTA button: 'Book Consultation' (scrolls to onboarding form) + 'Launch Talia AI' (opens demo modal)"
+      ]
+    },
+    {
+      "section_id": "hero",
+      "name": "Kinetic Hero with Line-by-Line Reveal",
+      "content": "From Raw Idea to Viral Distribution — Powered by AI & Production Experts.",
+      "subheading": "Pocket Talia is the dual-engine media powerhouse for high-velocity founders. We write, direct, film, and scale episodic media while our Talia AI engine automates scripts, shot lists, budgets, and distribution pipelines in seconds.",
+      "live_stats_bar": [
+        {"metric": "142M+", "label": "Organic Views Generated", "delta": "+34% this month"},
+        {"metric": "84.2%", "label": "Avg. Hook Retention (3s)", "delta": "2.4x industry avg"},
+        {"metric": "420+", "label": "Founders & Series Produced", "delta": "Across 18 tech hubs"},
+        {"metric": "< 90s", "label": "Talia AI Script-to-Shotlist", "delta": "Full production packet"}
+      ],
+      "ctas": [
+        {"label": "Explore Talia AI Suite", "type": "primary_conic", "target": "#ai-suite"},
+        {"label": "Partner with Agency", "type": "secondary_outline", "target": "#onboarding"}
+      ]
+    },
+    {
+      "section_id": "editorial_ribbon",
+      "name": "Kinetic Editorial Ribbon / Marquee",
+      "style": "Slow drift marquee with low contrast ash blush text, glowing dot dividers, and founder badges",
+      "items": [
+        "EPISODIC DOCUSERIES 'HOW TO STARTUP'",
+        "AI SCRIPT BREAKDOWN ENGINE",
+        "META & TIKTOK VIRAL GROWTH",
+        "ON-CAMERA FOUNDER COACHING",
+        "AUTOMATED CALL SHEETS & BUDGETS",
+        "4K ANAMORPHIC CINEMATOGRAPHY",
+        "CLIENT REVIEW WORKSPACE WITH TIMECODE APPROVALS"
+      ]
+    },
+    {
+      "section_id": "ai_suite",
+      "name": "AI Filmmaking & Pre-Production SaaS Suite Showcase",
+      "features": [
+        {
+          "tab": "Talia Copilot Chat",
+          "description": "Interactive prompt-to-production engine. Generate screenplays, scene breakdowns, voiceover scripts, and character briefs instantly.",
+          "interactive_mock": "Live interactive Talia chat console with preset prompts: 'Pitch Tech Docuseries Scene', 'Budget $15k 2-Day Shoot', 'Rewrite Hook for TikTok Viral'"
+        },
+        {
+          "tab": "Automated Shot List & Storyboard",
+          "description": "Transforms dialogue into director shot lists with lens focal lengths (24mm/50mm/85mm), camera movement, and lighting schema."
+        },
+        {
+          "tab": "Client Review & Approval Workspace",
+          "description": "Role-based secure review links with timecoded sticky video feedback, multi-stakeholder sign-offs, and automated export."
+        }
+      ]
+    },
+    {
+      "section_id": "media_matrix",
+      "name": "Media Embed Matrix with Video Player Modal",
+      "tabs": [
+        {
+          "id": "shorts",
+          "label": "Daily Interview Shorts",
+          "count": "34 Clips",
+          "aspect": "9:16 vertical cards with simulated viral play overlays, view counts, and hook transcripts"
+        },
+        {
+          "id": "vlogs",
+          "label": "Weekly Studio Vlogs",
+          "count": "18 Episodes",
+          "aspect": "16:9 cinematic widescreen cards with BTS commentary"
+        },
+        {
+          "id": "docuseries",
+          "label": "Docuseries 'How to Startup'",
+          "count": "6-Episode Deep Dive",
+          "aspect": "Hero feature card with episode list: Ep 1 'Zero to Pre-Seed', Ep 2 'The Midnight Pivot', Ep 3 'Hiring Titans', Ep 4 'The Viral Engine', Ep 5 'War Room Launch', Ep 6 'Series A Horizon'"
+        }
+      ],
+      "social_hub": ["YouTube (380k subs)", "Instagram (210k)", "TikTok (640k)", "LinkedIn (95k)", "Meta Ads ($1.8M ARR track)"]
+    },
+    {
+      "section_id": "analytics_dashboard",
+      "name": "Unified Viral Analytics & Attribution Dashboard",
+      "range_switcher": ["7D", "30D", "90D"],
+      "widgets": [
+        {
+          "id": "platform_impressions",
+          "title": "Cross-Platform Impressions Trend",
+          "chart_type": "AreaChart (Recharts) with dual gradients (#8B0032 and #D35400)"
+        },
+        {
+          "id": "hook_retention_gauges",
+          "title": "Hook Retention & Drop-Off Curve",
+          "chart_type": "LineChart / Bar gauges showing retention from second 0 to second 60"
+        },
+        {
+          "id": "gsc_spike_correlation",
+          "title": "GSC Organic Search Spikes vs. Video Release Dates",
+          "chart_type": "ComposedChart (Bar + Line overlay showing direct brand search lifts after docuseries drops)"
+        },
+        {
+          "id": "ga4_referral_donut",
+          "title": "GA4 Traffic Acquisition & Direct Signups",
+          "chart_type": "PieChart (Donut) with custom legend: YouTube Organic, TikTok Viral, LinkedIn Episodic, Meta Paid Ads"
+        }
+      ]
+    },
+    {
+      "section_id": "workflow",
+      "name": "Build-in-Public 5-Step Workflow",
+      "progress_line": "Glowing scroll-linked vertical spine transitioning from rust bloom to crimson violet",
+      "steps": [
+        {"step": "01", "name": "Story Architect & AI Deep-Dive", "desc": "Talia extracts your core moat, founder origin, and counter-intuitive industry insights into high-stakes narrative arcs."},
+        {"step": "02", "name": "Full Pre-Production Packet in 48 Hours", "desc": "Automated call sheets, studio locations, talent casting, moodboards, and camera lens packages generated and approved."},
+        {"step": "03", "name": "High-Fidelity Production Day", "desc": "Pocket Talia's Emmy & Sundance-trained cinematography crew shoots with RED/ARRI gear, wireless monitoring, and live teleprompters."},
+        {"step": "04", "name": "48-Hour Rapid Post-Production & Sound Design", "desc": "Color grading, sound mastering, caption kinetic typography, and multi-ratio cutting for Shorts, Vlogs, and 4K Series."},
+        {"step": "05", "name": "Algorithmic Omnipresence & Viral Distribution", "desc": "Precision scheduling across Meta, TikTok, YouTube, and LinkedIn with real-time attribution tracking."}
+      ]
+    },
+    {
+      "section_id": "pricing",
+      "name": "Pricing Matrix: Software Tiers & Agency Retainers",
+      "toggle_tabs": ["AI Filmmaking Software", "Media Agency Retainers"],
+      "software_tiers": [
+        {"name": "Indie Creator", "price": "$49", "cadence": "/month", "popular": false, "features": ["1 User Seat", "Unlimited Talia Script Generations", "10 Automated Shot Lists/mo", "Community Export Presets", "Standard Cloud Review"]},
+        {"name": "Studio Pro", "price": "$149", "cadence": "/month", "popular": true, "features": ["5 Team Seats", "Advanced Talia Voiceover & Scene Breakdown", "Unlimited Storyboards & Call Sheets", "Interactive Client Timecode Approval Workspace", "Custom Export to Final Cut & Premiere", "Priority GPU Pipeline"]},
+        {"name": "Enterprise Production House", "price": "$399", "cadence": "/month", "popular": false, "features": ["Unlimited Seats & Projects", "Custom Fine-Tuned AI Copilot on Founder's Voice", "Dedicated Cloud Render Nodes", "Full API Access + Zapier / Slack Sync", "Custom NDA & Enterprise SLA"]}
+      ],
+      "agency_retainers": [
+        {"name": "Launch Engine", "price": "$4,500", "cadence": "/month", "popular": false, "features": ["12 High-Impact Vertical Shorts/mo", "Bi-Weekly Strategy & Hook Scripting", "Full Remote Production or Studio Shoot", "Editing, Color Grade, Kinetic Captions", "Attribution Analytics Report"]},
+        {"name": "Build-in-Public Scale", "price": "$8,500", "cadence": "/month", "popular": true, "features": ["24 Vertical Shorts + 2 Long-form YouTube Vlogs", "On-Camera Founder Direction & Acting Coach", "Full On-Site Cinema Crew (1 Shoot Day/mo)", "Access to Talia AI Enterprise Suite Included", "Meta Ads Creative Optimization Pack", "Dedicated Creative Director & Account Lead"]},
+        {"name": "Flagship Media House", "price": "$16,000", "cadence": "/month", "popular": false, "features": ["Full Docuseries Season (4-6 Cinematic Episodes)", "Daily Omnichannel Content (40+ Assets/mo)", "Dedicated On-Location DP & Sound Recordist", "Executive PR & Tier-1 Founder Distribution", "24/7 Talia War Room + Real-time Analytics Dashboard"]}
+      ]
+    },
+    {
+      "section_id": "onboarding_form",
+      "name": "Interactive Onboarding & Application Form",
+      "backend_endpoint": "POST /api/onboarding",
+      "persisted_fields": [
+        "full_name",
+        "email",
+        "company_name",
+        "role",
+        "primary_goal (Docuseries, Viral Shorts, AI Software, Full Agency Retainer)",
+        "monthly_budget (<$5k, $5k-$10k, $10k-$25k, $25k+)",
+        "project_details"
+      ],
+      "feedback": "Sonner toast notification on successful submission + real-time validation"
+    },
+    {
+      "section_id": "footer",
+      "name": "Cinematic Footer",
+      "components": [
+        "Pocket Talia giant stylized typographic watermark 'POCKET TALIA'",
+        "Office coordinates: San Francisco / New York / London",
+        "Quick links, API docs, Media Kit, Privacy Policy, Terms",
+        "Status indicator: 'Talia AI Engine v2.4 Online - All Systems Operational'"
+      ]
+    }
+  ],
+  "technical_requirements": {
+    "javascript_only": true,
+    "framework": "React 19 + Tailwind CSS + Radix UI + Lucide React + Framer Motion + Recharts",
+    "data_test_ids": {
+      "navbar_brand": "navbar-brand-link",
+      "nav_link_ai_suite": "nav-link-ai-suite",
+      "nav_link_media_matrix": "nav-link-media-matrix",
+      "nav_link_analytics": "nav-link-analytics",
+      "nav_link_workflow": "nav-link-workflow",
+      "nav_link_pricing": "nav-link-pricing",
+      "hero_cta_explore": "hero-cta-explore-button",
+      "hero_cta_partner": "hero-cta-partner-button",
+      "ai_tab_chat": "ai-tab-chat-button",
+      "ai_tab_shotlist": "ai-tab-shotlist-button",
+      "ai_tab_review": "ai-tab-review-button",
+      "media_tab_shorts": "media-tab-shorts-button",
+      "media_tab_vlogs": "media-tab-vlogs-button",
+      "media_tab_docuseries": "media-tab-docuseries-button",
+      "analytics_range_7d": "analytics-range-7d-button",
+      "analytics_range_30d": "analytics-range-30d-button",
+      "analytics_range_90d": "analytics-range-90d-button",
+      "pricing_tab_software": "pricing-tab-software-button",
+      "pricing_tab_agency": "pricing-tab-agency-button",
+      "onboarding_submit_button": "onboarding-form-submit-button",
+      "video_modal_close": "video-modal-close-button"
+    }
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Never use generic centered layouts or flat SaaS blue.",
+    "Maintain the dark oxide (#0D0D11, #121217) background with crimson violet (#8B0032) and rust bloom (#D35400) glows.",
+    "Ensure all buttons and inputs have explicit interactive states and high contrast on focus.",
+    "Every card must have internal padding (p-6 or p-8) and subtle 1px border with layered ambient shadows.",
+    "Do not use transparent background on header, dialog modals, or dropdowns — use heavy backdrop blur with bg-[#0D0D11]/80 or bg-[#16161E].",
+    "All interactive elements must carry the exact data-testid attributes defined above.",
+    "Use framer-motion for smooth entrance transitions, rotating conic-border effects, and interactive Talia chat typing feedback."
+  ]
+}
