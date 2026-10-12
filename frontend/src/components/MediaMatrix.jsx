@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play, X, Eye, Youtube, Instagram, Linkedin, Music2, Megaphone, ArrowUpRight, Pause } from "lucide-react";
+import { EPISODES, ACT_STRUCTURE } from "@/data/episodes";
 
 const IMG = {
   studio: "https://images.unsplash.com/photo-1559523161-0fc0d8b38a7a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwxfHxwb2RjYXN0JTIwaW50ZXJ2aWV3JTIwc3R1ZGlvJTIwbmVvbiUyMGxpZ2h0c3xlbnwwfHx8fDE3OTE3ODI5Njh8MA&ixlib=rb-4.1.0&q=85",
@@ -24,11 +26,10 @@ const VLOGS = [
   { id: "v3", title: "Vlog 012 — Hiring Titan #4", img: IMG.rig, views: "226K", duration: "9:58", desc: "How we interview for taste, not resumes." },
 ];
 
-const ACTS = [
-  { act: "Act I — The Spark", episodes: ["Ep 1 · Zero to Pre-Seed", "Ep 2 · The Midnight Pivot"] },
-  { act: "Act II — The Grind", episodes: ["Ep 3 · Hiring Titans", "Ep 4 · The Viral Engine"] },
-  { act: "Act III — The Scale", episodes: ["Ep 5 · War Room Launch", "Ep 6 · Series A Horizon"] },
-];
+const ACTS = ACT_STRUCTURE.map((a) => ({
+  act: a.act,
+  episodes: a.slugs.map((s) => EPISODES.find((e) => e.slug === s)),
+}));
 
 const SOCIALS = [
   { icon: Youtube, name: "YouTube", stat: "380K subscribers", note: "Weekly longform vlogs", testid: "social-hub-youtube" },
@@ -213,10 +214,15 @@ const MediaMatrix = () => {
                       <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-rust mb-3">{a.act}</p>
                       <div className="space-y-2">
                         {a.episodes.map((ep) => (
-                          <div key={ep} className="flex items-center justify-between rounded-xl bg-white/[0.03] border border-white/[0.06] px-4 py-3 hover:bg-white/[0.06] transition-colors">
-                            <span className="text-sm font-medium text-ash/90">{ep}</span>
-                            <Play size={13} className="text-clay" />
-                          </div>
+                          <Link
+                            key={ep.slug}
+                            to={`/episodes/${ep.slug}`}
+                            data-testid={`episode-link-${ep.slug}`}
+                            className="group flex items-center justify-between rounded-xl bg-white/[0.03] border border-white/[0.06] px-4 py-3 hover:bg-white/[0.06] hover:border-rust/40 transition-colors"
+                          >
+                            <span className="text-sm font-medium text-ash/90">{ep.short}</span>
+                            <ArrowUpRight size={13} className="text-clay transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                          </Link>
                         ))}
                       </div>
                     </motion.div>

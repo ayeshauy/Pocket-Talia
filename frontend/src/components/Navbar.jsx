@@ -13,8 +13,13 @@ const LINKS = [
 
 export const scrollToSection = (e, href) => {
   if (e) e.preventDefault();
-  if (window.__lenis) window.__lenis.scrollTo(href, { offset: -76 });
-  else document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+  const el = document.querySelector(href);
+  if (!el) {
+    window.location.href = `/${href}`;
+    return;
+  }
+  if (window.__lenis) window.__lenis.scrollTo(el, { offset: -76 });
+  else el.scrollIntoView({ behavior: "smooth" });
 };
 
 const Navbar = () => {

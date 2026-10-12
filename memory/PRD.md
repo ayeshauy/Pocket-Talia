@@ -29,6 +29,14 @@ Dark-oxide luxury aesthetic (#121212 base, #8B0032 crimson-violet / #D35400 rust
 - Onboarding form: dual CTA mode toggle, full validation (client + server), persists to MongoDB, returns PT-XXXX reference (verified PT-0002 via curl, PT-0003 via UI), graceful inline errors
 - Footer: giant watermark, ecosystem/legal links, Talia engine status pill
 
+### Iteration 2 (2026-10-12)
+- Hero copy changed to "The Digital Media Engine Built for Tech Startups & Founders." + new sub-headline
+- React Router added: Landing (/) + EpisodeCaseStudy (/episodes/:slug)
+- 6 episode case study pages (data: /app/frontend/src/data/episodes.js) — hero banner, KPI row, retention curve, platform split bars, GSC release-day spike chart, GA4 attribution table (sessions/signups/waitlist/deck downloads), attribution read, founder quote, prev/next nav, CTA with conic border. All per-episode analytics are curated DEMO data.
+- Media Matrix docuseries episode rows now link to their case study pages
+- Navbar/Footer anchor links fall back to /#section navigation when off the landing page
+- User shared pockettalia.tech registrar NS/SOA info — domain connect happens at Deploy time (platform provides records to add at registrar)
+
 ## Backlog (prioritized)
 - P0: none blocking
 - P1: Real video embeds (YouTube/TikTok) once client provides footage; real GA4/GSC integration behind the dashboard; admin view for onboarding submissions

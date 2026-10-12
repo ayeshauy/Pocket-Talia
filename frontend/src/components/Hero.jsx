@@ -38,9 +38,9 @@ const Counter = ({ value, decimals = 0, prefix = "", suffix = "" }) => {
 };
 
 const LINES = [
-  { text: "From Raw Idea to", gradient: false },
-  { text: "Viral Distribution —", gradient: true },
-  { text: "Powered by AI & Production Experts.", gradient: false },
+  { text: "The Digital Media Engine", gradient: false },
+  { text: "Built for Tech", gradient: true },
+  { text: "Startups & Founders.", gradient: false },
 ];
 
 const Hero = () => {
@@ -92,7 +92,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.75 }}
               className="mt-7 max-w-xl text-base sm:text-lg leading-relaxed text-ash/60"
             >
-              Bring your vision to life before life gets in the way. Pocket Talia combines an all-in-one AI
+              We turn raw startup execution into viral distribution. Pocket Talia combines an all-in-one AI
               pre-production suite with full-stack media operations for high-growth tech startups.
             </motion.p>
 
