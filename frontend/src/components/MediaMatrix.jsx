@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Play, X, Eye, Youtube, Instagram, Linkedin, Music2, Megaphone, ArrowUpRight, Pause } from "lucide-react";
+import { Play, X, Eye, Youtube, Instagram, Linkedin, Music2, Megaphone, ArrowUpRight, Pause, Facebook } from "lucide-react";
 import { EPISODES, ACT_STRUCTURE } from "@/data/episodes";
 
 const IMG = {
@@ -37,6 +37,7 @@ const SOCIALS = [
   { icon: Music2, name: "TikTok", stat: "640K followers", note: "Viral interview shorts", testid: "social-hub-tiktok" },
   { icon: Linkedin, name: "LinkedIn", stat: "95K followers", note: "Founder-led episodic", testid: "social-hub-linkedin" },
   { icon: Megaphone, name: "Meta Ads", stat: "$1.8M ARR tracked", note: "Paid amplification engine", testid: "social-hub-meta" },
+  { icon: Facebook, name: "Facebook", stat: "120K followers", note: "Episodic clips & community", testid: "social-hub-facebook" },
 ];
 
 const TABS = [
@@ -68,7 +69,7 @@ const MediaMatrix = () => {
         >
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-clay mb-4">02 — The Proof of Craft</p>
           <h2 className="font-syne font-bold tracking-tight text-white text-3xl sm:text-4xl lg:text-5xl leading-[1.1]">
-            The media <span className="text-gradient-rust">matrix</span>. Always shipping.
+            The feed <span className="text-gradient-rust">never sleeps</span>.
           </h2>
           <p className="mt-5 text-ash/60 leading-relaxed">
             Daily shorts engineered for 3-second retention, weekly build-in-public vlogs, and the flagship
@@ -235,7 +236,7 @@ const MediaMatrix = () => {
 
         <div className="mt-14">
           <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-ash/45 mb-5">Live Network Feed</p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
             {SOCIALS.map((s, i) => (
               <motion.a
                 key={s.name}

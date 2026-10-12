@@ -67,7 +67,7 @@ const Hero = () => {
             >
               <span className="w-1.5 h-1.5 rounded-full bg-rust shadow-[0_0_10px_#D35400] animate-pulse" />
               <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-clay">
-                Dual-Engine: AI SaaS x Media Agency
+                AI-Native Filmmaking &amp; Media Platform
               </span>
             </motion.div>
 

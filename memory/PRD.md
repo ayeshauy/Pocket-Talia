@@ -37,6 +37,14 @@ Dark-oxide luxury aesthetic (#121212 base, #8B0032 crimson-violet / #D35400 rust
 - Navbar/Footer anchor links fall back to /#section navigation when off the landing page
 - User shared pockettalia.tech registrar NS/SOA info — domain connect happens at Deploy time (platform provides records to add at registrar)
 
+### Iteration 3 (2026-10-12)
+- Official flame-aperture logo (user-supplied) now used in navbar, footer, and as favicon (/public/logo.jpg)
+- Hero eyebrow: "AI-Native Filmmaking & Media Platform"
+- Media Matrix H2: "The feed never sleeps."
+- Analytics eyebrow: "03 — The Proof Engine, Not Promises"
+- Facebook card added to Live Network Feed (6 social cards)
+- New "Organic Keyword Growth" card below GSC spikes (5 keywords with animated bars, clicks, growth badges — demo data)
+
 ## Backlog (prioritized)
 - P0: none blocking
 - P1: Real video embeds (YouTube/TikTok) once client provides footage; real GA4/GSC integration behind the dashboard; admin view for onboarding submissions

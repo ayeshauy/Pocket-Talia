@@ -120,7 +120,7 @@ const AnalyticsDashboard = () => {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-2xl"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.25em] text-clay mb-4">03 — The Proof Engine</p>
+            <p className="font-mono text-xs uppercase tracking-[0.25em] text-clay mb-4">03 — The Proof Engine, Not Promises</p>
             <h2 className="font-syne font-bold tracking-tight text-white text-3xl sm:text-4xl lg:text-5xl leading-[1.1]">
               Attribution from <span className="text-gradient-rust">hook to signup</span>.
             </h2>
@@ -267,6 +267,46 @@ const AnalyticsDashboard = () => {
             </Card>
           </div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          data-testid="keyword-growth-card"
+          className="mt-6 rounded-3xl border border-white/[0.08] bg-oxide-900/70 p-6"
+        >
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-6">
+            <h3 className="font-syne font-semibold text-white text-base">Organic Keyword Growth</h3>
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ash/40">Triggered by build-in-public content</span>
+          </div>
+          <div className="space-y-4">
+            {[
+              { term: '"how to startup" docuseries', clicks: "18.2K", growth: "+412%", w: 100 },
+              { term: "build in public vlog", clicks: "11.7K", growth: "+268%", w: 64 },
+              { term: "loopstack founder interview", clicks: "8.4K", growth: "+194%", w: 46 },
+              { term: "startup daily vlog youtube", clicks: "6.9K", growth: "+161%", w: 38 },
+              { term: "pocket talia", clicks: "5.3K", growth: "+138%", w: 29 },
+            ].map((k, i) => (
+              <div key={k.term} data-testid={`keyword-row-${i}`} className="grid sm:grid-cols-[minmax(0,260px)_1fr_auto] items-center gap-3">
+                <span className="font-mono text-xs text-ash/80 truncate">{k.term}</span>
+                <div className="h-2 rounded-full bg-white/[0.06] overflow-hidden">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    whileInView={{ width: `${k.w}%` }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1.1, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+                    className="h-full rounded-full bg-gradient-to-r from-crimson to-rust"
+                  />
+                </div>
+                <div className="flex items-center gap-2.5 sm:justify-end">
+                  <span className="font-mono text-xs text-white">{k.clicks} clicks</span>
+                  <span className="font-mono text-[10px] text-willow bg-willow/10 border border-willow/25 rounded-full px-2 py-0.5">{k.growth}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
